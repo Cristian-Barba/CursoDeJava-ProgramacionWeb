@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script defer src="DOM.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Registro en nuestra App</h1>
+    </header>
+    <Main>
+        <section>
+            <h3>Datos Basicos</h3>
+            <label for="txtNombre">Nombres:</label>
+            <input id="txtNombre" type="text">
+            <label for="txtApellidos">Apellidos: </label>
+            <input id="txtApellidos" type="text">
+            <label for="txtFechaNac">Fecha Nacimiento: </label>
+            <input id="txtFechaNac" type="date">
+        </section>
+        <section>
+            <h3>Otros Datos</h3>
+            <label for="">Genero</label>
+            <input type="radio" name="genero" id="Masculino" onclick="SeleccionarGenero()"> Masculino
+            <input type="radio" name="genero" id="Femenino" onclick="SeleccionarGenero()"> Femenino
+            <input type="radio" name="genero" id="O" onclick="SeleccionarGenero()"> Otro
+            <input id="txtOtro" type="text" class="invisible">
+            <br>
+            <br>
+            <label for="">Nivel Academico</label>
+            <select name="" id="listNivel">
+                <option value="1">Primaria</option>
+                <option value="2">Secundaria</option>
+                <option value="3">Bachillerato</option>
+                <option value="4">Licenciatura</option>
+            </select>
+        </section>
+        <br>
+        <br>
+        <label for="">Acepto terminos y condiciones</label>
+        <input type="checkbox" name="" id="checkAcepto" onclick="AceptaTerminos()">
+        <br>
+        <br>
+        <button onclick="Registrar()" class="invisible">Registrar</button>
+        <br>
+        <br>
+        <table id="registro" border="1px">
+            <tbody id="tbody">
+                <tr>
+                <th>Nombre</th>
+                <th>Fecha Nacimineto</th>
+                <th>Genero</th>
+                <th>Nivel academico</th>
+            </tr>
+            </tbody>
+        </table>
+    </Main>
+    <Footer>
+        <p>Todos los derechos reservados</p>
+    </Footer>
+</body>
+</html>
